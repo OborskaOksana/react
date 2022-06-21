@@ -1,23 +1,20 @@
 import logo from './logo.svg';
+import Character from "./components/character/Character";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Character name={'Bart'}
+                   desc={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae consequuntur deleniti dolore\n'}
+                   picture={'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png'}
+        />
+
+        <Character name='Homer'
+                   desc='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae consequuntur deleniti dolore\n'
+                   picture='https://upload.wikimedia.org/wikipedia/uk/thumb/0/02/Homer_Simpson_2006.png/300px-Homer_Simpson_2006.png'
+        />
+
     </div>
   );
 }
