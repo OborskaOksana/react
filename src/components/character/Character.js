@@ -10,5 +10,6 @@ function Character(props) {
             <img src={picture} alt=""/>
         </div>
     )
+
 }
 export default Character;
